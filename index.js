@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express")
 const bodyparse = require("body-parser")
 const mongoose = require("mongoose")
@@ -8,9 +9,11 @@ const app = express()
 app.use(bodyparse.json())
 app.use(bodyparse.urlencoded({extended:true}))
 
+const baseUri = process.env.BASE_URI;
+
 mongoose
   .connect(
-    "mongodb+srv://user01:adK0KHCj30Mpuoyu@cluster0.4lsx7xf.mongodb.net/",
+    baseUri,
    
   )
   .then(() => console.log("MongoDB Is Connected"))
