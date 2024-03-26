@@ -24,7 +24,7 @@
 
 ## Documentation
 
-Refer to the [documentation](./docs/README.md) for detailed instructions on how to set up and use the MERN Server Boilerplate, including configuration options, folder structure explanation, and more.
+Created schema and work with model also many things 
 
 ## Contributing
 
